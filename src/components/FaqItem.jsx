@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { Collapse } from "react-collapse"; 
+import  Collapse  from "react-collapse"; 
 const FaqItem = ({ item, index }) => {
   const [activeId, setActiveId] = useState(null);
 
