@@ -118,6 +118,7 @@ export const features = [
       points: [
         "Milestone: Focus on piezoelectric road technology.",
       ],
+      done: true,
     },
     {
       title: " Research & Development",
@@ -127,6 +128,7 @@ export const features = [
       points: [
         "Milestone: Feasibility studies and expert collaborations.",
       ],
+      done: true,
     },
     {
       title: "Pilot Test Launched",
@@ -136,6 +138,7 @@ export const features = [
       points: [
         " Milestone: 10m test of piezoelectric system.",
       ],
+      done: false,
     },
     {
       title: "Technology Demonstration",
@@ -145,6 +148,7 @@ export const features = [
       points: [
         "Milestone: Successful energy generation test.",
       ],
+      done: false,
     },
     {
       title: "Next Fundraising Round",
@@ -154,6 +158,7 @@ export const features = [
       points: [
         "Milestone: Fundraising for larger scale implementation",
       ],
+      done: false,
     },
     {
       title: "Manufacturing Plans",
@@ -163,6 +168,7 @@ export const features = [
       points: [
         "Milestone: Facility setup planned in East/Central Africa",
       ],
+      done: false,
     },
   ];
   
@@ -172,40 +178,18 @@ export const features = [
       name: 'Habiyambere Muhire Hubert',
       role: 'Managing Director',
       avatarUrl: '/images/teamMembers/hubert.jpg',
-      comment:
-        "Currently focusing on ...",
     },
     {
       id: '1',
-      name: 'Murengezi Octave',
-      role: 'Innovations Expert',
-      avatarUrl: '/images/teamMembers/jim-bradley.png',
-      comment:
-        "some words here...",
-    },
-    {
-      id: '2',
-      name: 'Nkijijwenimana Innocent',
-      role: 'Civil Engineer',
-      avatarUrl: '/images/teamMembers/jim-bradley.png',
-      comment:
-        "Some thoughtful words here ....",
-    },
-    {
-      id: '3',
       name: 'Paula Brooks Aziz',
       role: 'Early Investor',
-      avatarUrl: '/images/teamMembers/jim-bradley.png',
-      comment:
-        "Some thoughtful words here ....",
-    },
+      avatarUrl: '/images/teamMembers/paula.png',
+      },
     {
-      id: '4',
+      id: '2',
       name: 'Brandi McLellan Brooks',
       role: 'Early Investor',
-      avatarUrl: '/images/teamMembers/jim-bradley.png',
-      comment:
-        "Some thoughtful words here ....",
+      avatarUrl: '/images/teamMembers/brandi.png',
     },
   ];
   

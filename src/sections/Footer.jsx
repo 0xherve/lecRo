@@ -3,8 +3,8 @@ import { socials, footer } from '../constants'
 
 const Footer = () => {
   return (
-    <>
-    <div className='container flex max-lg:flex-col lg:flex-row sm:justify-between justify-between items-center m-22'>
+    < >
+    <div className='container flex max-lg:flex-col flex-row sm:justify-between justify-between items-center gap-4 m-22'>
 <div className='flex items-center justify-between'>
 <a className="flex-1 cursor-pointer z-2 " href='/'>
      <img src="/images/lecRo.svg" width={200} height={55} alt="logo" />
@@ -14,8 +14,8 @@ const Footer = () => {
 </a>
 </div>
 
-<div className='flex items-center  justify-between max-lg:justify-center '>
-    <ul className='flex flex-row gap-22  m-10'>
+<div className='flex items-center  justify-between max-lg:justify-center'>
+    <ul className='flex flex-row lg:gap-22  max-lg:gap-5 max-sm:flex-col m-10'>
         {socials.map((item)=>(
             <li key={item.id} >
                 <a href={item.url} target="_blank" className='flex flex-row gap-3 '>
@@ -27,16 +27,16 @@ const Footer = () => {
     </ul>
 </div>
 
-<div className="flex flex-col items-center justify-between gap-3 cursor-pointer">
+<div className="flex flex-col items-center justify-between gap-3 lg:mr-10">
   {footer.map((item) => (
     <Link key={item.id} to={item.url} offset={-100} spy smooth>
-      <h5 className="font-medium">{item.title}</h5>
+      <h5 className="font-medium cursor-pointer underline">{item.title}</h5>
     </Link>
   ))}
 </div>
     </div>
-  <div>
-    <h4>2024. Lec-Ro. All Rights Reserved.</h4>
+  <div className='flex justify-center align-center mb-10'> 
+    <h4> 2024. Lec-Ro. All Rights Reserved.</h4>
   </div>
     </>
   )

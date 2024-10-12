@@ -8,8 +8,6 @@ const TeamItem =  ({ item, containerClassName }) => {
           containerClassName,
         )}
       >
-        <blockquote className="h6 mb-8 text-p4">{item.comment}</blockquote>
-  
         <div className="flex items-center max-xl:-mr-8">
           <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
             <img

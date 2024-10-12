@@ -28,8 +28,15 @@ import {
           </div>
         }
       >
-        <div>
+        <div className='flex justify-between'>
           <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+         {experience.done ? (
+          <img
+          src={experience.icon}
+          className='w-[6%] h-[10%] bg-green-300 rounded-full object-contain'
+        />
+         ): ''}
+          
         </div>
   
         <ul className='mt-5 list-disc ml-5 space-y-2'>
