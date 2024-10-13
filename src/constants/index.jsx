@@ -191,6 +191,12 @@ export const features = [
       role: 'Early Investor',
       avatarUrl: '/images/teamMembers/brandi.png',
     },
+    {
+      id: '3',
+      name: 'Murengezi Octave',
+      role: 'Innovation Expert',
+      avatarUrl: '/images/teamMembers/octave.JPG',
+    },
   ];
   
   export const logos = [
@@ -395,15 +401,9 @@ export const features = [
     },
     {
       id: '1',
-      title: 'Threads',
-      icon: '/images/socials/threads.svg',
-      url: 'https://threads.net',
-    },
-    {
-      id: '2',
       title: 'Instagram',
       icon: '/images/socials/instagram.svg',
-      url: 'https://instagram.com',
+      url: 'https://www.instagram.com/lecro_global/',
     },
   ];
 
