@@ -49,63 +49,65 @@ export const features = [
   export const faq = [
     {
       id: '0',
-      question: 'How easy is it to setup TBS?',
+      question: 'What is Lec-Ro Ltd?',
       answer:
-        'The answer goes here ...',
+        'Lec-Ro Ltd is a company focused on sustainable energy solutions. They specialize in using piezoelectric technology in road construction and tiles to generate electricity.',
     },
     {
       id: '1',
-      question: 'Can TBS be used on already built road infrastructure?',
+      question: 'What is Piezoelectric technology?',
       answer:
-        'The answer goes here ...',
+        "Piezoelectricity is the ability of certain materials to generate electricity when subjected to mechanical stress. It's used in sensors, energy harvesters, and actuators.",
     },
     {
       id: '2',
-      question: 'How much energy does it produce?',
+      question: 'How does piezoelectric technology work?',
       answer:
-        'The answer goes here ...',
+        'Piezoelectric materials produce electricity when they are squeezed or bent. Lec-Ro uses these materials in roads and tiles to harness energy from movement and use it for things like lighting and charging stations.',
     },
     {
       id: '3',
-      question: 'How long does it take to install?',
+      question: 'What are the benefits of using piezoelectric and mechanical energy technologies in road construction?',
       answer:
-        'The answer goes here ...',
+        'The combination of piezoelectric and mechanical energy technologies in road construction offers higher energy efficiency, renewable energy generation and reduced operational costs',
     },
     {
       id: '4',
-      question: 'Do you have corporate plans?',
+      question: 'What kinds of tiles does Lec-Ro Ltd offer?',
       answer:
-        'The answer goes here ...',
+        'Lec-Ro Ltd offers energy-generating tiles that can be used in areas with high foot traffic, such as commercial buildings and walkways. These tiles can convert the energy from people walking on them into electricity.',
     },
     {
       id: '5',
-      question: 'Where is the electricty stored?',
+      question: 'How much energy does it produce?',
       answer:
-        'The answer goes here ...',
+        'The amount of energy produced depends on factors like traffic volume, tile density, and system design. However, typical installations can generate significant electricity to contribute to local energy needs.',
     },
+    
     {
       id: '6',
-      question: 'How is the electricity distributed?',
+      question: 'Where is the electricty stored?',
       answer:
-        'The answer goes here ...',
+        'The electricity generated is typically stored in nearby energy storage units. These units can be batteries, capacitors, or other suitable storage solutions.',
     },
     {
       id: '7',
-      question: 'What is Piezoelectric technology?',
+      question: 'How is the electricity distributed?',
       answer:
-        'The answer goes here ...',
+        'The generated electricity can be used in various ways, such as powering local infrastructure like streetlights and traffic signals, feeding back into the electrical grid, or storing it for later use in batteries.',
     },
     {
       id: '8',
-      question: 'What are the harms to done to the environment?',
+      question: 'How does Lec-Ro ensure the durability of its piezoelectric and mechanical energy systems?',
       answer:
-        'The answer goes here ...',
+        'Lec-Ro uses high-quality materials, rigorous testing, and expert collaboration to ensure the durability of its piezoelectric and mechanical energy systems. These systems are designed to withstand harsh conditions and provide long-term performance.',
     },
+    
     {
       id: '9',
-      question: 'Those it produce any pollution?',
+      question: "What is Lec-Ro’s vision for the future?",
       answer:
-        'The answer goes here ...',
+        'Our vision is to expand the implementation of piezoelectric and mechanical energy generation technology across Africa and beyond. We aim to contribute to the development of smart cities and sustainable energy infrastructures, reducing reliance on fossil fuels.',
     },
   ];
   
