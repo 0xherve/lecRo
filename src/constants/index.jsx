@@ -412,7 +412,7 @@ export const features = [
   export const footer = [
     {
       id: '0',
-      title: 'Hero',
+      title: 'Home',
       url: 'hero',
     },
     {
@@ -432,7 +432,7 @@ export const features = [
     },
     {
       id: '4',
-      title: 'FaQs',
+      title: 'FAQs',
       url: 'faq',
     },
   ];
