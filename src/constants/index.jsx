@@ -4,7 +4,7 @@ export const features = [
       icon: '/images/feature-1.png',
       caption: 'Clean Energy',
       title: 'Piezoelectric Technology',
-      text: "Our piezoelectric devices embedded in road infrastructures are paving the way for clean, renewable energy. Every vehicle passing over these systems generates electricity by converting the pressure from traffic into power. This innovative technology transforms Rwanda’s roads into active energy sources, reducing reliance on traditional grids. By harnessing the flow of traffic, we’re driving the shift towards smart, self-sustaining cities that are not only efficient but environmentally sustainable—leading Rwanda into a greener, smarter future.",
+      text: "Our piezoelectric devices in roadways generate clean, renewable energy. Vehicles passing over them convert traffic pressure into electricity. This innovative technology turns Rwanda’s roads into energy sources, reducing reliance on traditional grids. By using traffic flow, we are advancing smart, self-sustaining cities that are both efficient and environmentally sustainable, driving Rwanda towards a greener, smarter future.",
       button: {
         icon: '/images/magictouch.svg',
         title: 'Watch the demo',
@@ -15,7 +15,7 @@ export const features = [
       icon: '/images/feature-2.png',
       caption: 'Smart Energy',
       title: 'Efficiency Matters',
-      text: 'By integrating piezoelectric devices into roadways, we’re not only generating clean energy but significantly reducing environmental impact. This innovative technology cuts down on fossil fuel reliance, lowering carbon emissions while promoting sustainable energy use. It also leads to cost savings in infrastructure projects by offsetting energy expenses for public utilities such as streetlights and traffic signals. In the long run, these savings reduce the overall budget for city infrastructure, making it a cost-effective solution that supports both economic growth and environmental responsibility, ultimately building a smarter, more efficient Rwanda.',
+      text: 'Our piezoelectric devices embedded in roadways generate clean energy and reduce environmental impact. By converting traffic pressure into power, they lower carbon emissions, decrease fossil fuel reliance, and provide cost savings for infrastructure projects like streetlights. This technology transforms Rwanda’s roads into active energy sources, contributing to smarter, more efficient, and sustainable cities, while supporting economic growth and environmental responsibility.',
       button: {
         icon: '/images/docs.svg',
         title: 'Read the docs',
