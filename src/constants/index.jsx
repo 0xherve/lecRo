@@ -8,6 +8,7 @@ export const features = [
       button: {
         icon: '/images/magictouch.svg',
         title: 'Watch the demo',
+        onclick: 'demo'
       },
     },
     {
@@ -15,7 +16,7 @@ export const features = [
       icon: '/images/feature-2.png',
       caption: 'Smart Energy',
       title: 'Efficiency Matters',
-      text: 'Our piezoelectric devices in roadways generate clean energy and reduce environmental impact. By converting traffic pressure into power, they lower carbon emissions, cut fossil fuel use, and save costs on infrastructure like streetlights. This technology transforms Rwanda’s roads into energy sources, contributing to smarter, more efficient, sustainable cities, while supporting economic growth and environmental responsibility.',
+      text: 'Our piezoelectric devices generate clean energy and reduce environmental impact. By converting traffic pressure into power, they lower carbon emissions, reduce fossil fuel use, and save costs on infrastructure like streetlights. This technology turns Rwanda’s roads into energy sources, contributing to smarter, efficient, sustainable cities, while supporting economic growth and environmental responsibility.',
       button: {
         icon: '/images/docs.svg',
         title: 'Read the docs',
