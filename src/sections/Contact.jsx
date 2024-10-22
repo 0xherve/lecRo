@@ -1,6 +1,6 @@
-import Button from '../components/Button';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Element } from 'react-scroll';
 
 const Contact = () => {
   const formRef = useRef();
@@ -47,71 +47,76 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-8 w-full">
-      <div className="grid place-items-center w-full gap-8 px-4 max-md:px-8">
-        <h3 className="h3 text-p4 text-center max-md:text-5xl max-lg:leading-12">
-          Contact Us
-        </h3>
+    <Element name='contact'>
+      <section >
+      <div className='container mt-8'>
+      <div className="flex flex-col justify-center items-center w-full gap-8">
+              <h3 className="h3 text-p4 text-center max-lg:leading-12">
+                Contact Us
+              </h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-12 px-20 py-12 w-[80%] max-w-[90%] border border-pale-blue rounded-3xl h-auto max-md:w-full max-md:px-6 max-md:py-8"
-        >
-          <div className="flex flex-col gap-3">
-            <label htmlFor="name" className="text-gray-500 text-xl font-semibold">
-              Full Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              className="bg-slate-800 h-16 px-6 py-3 rounded-2xl max-md:h-12 max-md:px-4 max-md:py-2"
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
-          <div className="flex flex-col gap-3">
-            <label htmlFor="email" className="text-gray-500 text-xl font-semibold">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="bg-slate-800 h-16 px-6 py-3 rounded-2xl max-md:h-12 max-md:px-4 max-md:py-2"
-              placeholder="yourname@example.com"
-              required
-            />
-          </div>
-          <div className="flex flex-col gap-3">
-            <label htmlFor="message" className="text-gray-500 text-xl font-semibold">
-              Message
-            </label>
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              className="bg-slate-800 px-6 py-3 rounded-2xl overflow-hidden max-md:px-4 max-md:py-2"
-              placeholder="Hi, I am interested in..."
-              rows={5} // Adjust rows for desired height
-              required
-            ></textarea>
-          </div>
+              <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="flex flex-col gap-12 px-20 py-12 w-[80%] max-w-[90%] border border-pale-blue rounded-3xl h-auto max-md:w-full max-md:px-6 max-md:py-8"
+              >
+                <div className="flex flex-col gap-3">
+                  <label htmlFor="name" className="text-gray-500 text-2xl font-semibold">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    className="bg-slate-800 h-16 px-6 py-3 rounded-2xl max-md:h-12 max-md:px-4 max-md:py-2 focus:outline-none"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <label htmlFor="email" className="text-gray-500 text-2xl font-semibold">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    className="bg-slate-800 h-16 px-6 py-3 rounded-2xl max-md:h-12 max-md:px-4 max-md:py-2 focus:outline-none"
+                    placeholder="yourname@example.com"
+                    required
+                  />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <label htmlFor="message" className="text-gray-500 text-2xl font-semibold">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    className="bg-slate-800 px-6 py-3 rounded-2xl overflow-hidden max-md:px-4 max-md:py-2"
+                    placeholder="Hi, I am interested in..."
+                    rows={5} // Adjust rows for desired height
+                    required
+                  ></textarea>
+                </div>
 
-          <button
-            onSubmit={handleSubmit}
-            className="rounded-2xl shadow-500 g5 w-full h-16 max-md:h-12"
-          >
-            <span className="text-2xl text-p1 max-md:text-xl">
-              {loading ? 'Sending...' : 'Send my Message'}
-            </span>
-          </button>
-        </form>
-      </div>
+                <button
+                  onSubmit={handleSubmit}
+                  className="rounded-2xl shadow-500 g5 w-full h-16 max-md:h-12"
+                >
+                  <span className="text-2xl text-p1 max-md:text-xl">
+                    {loading ? 'Sending...' : 'Send my Message'}
+                  </span>
+                </button>
+              </form>
+            </div>
+    </div>
     </section>
+    </Element>
+    
   );
 };
 

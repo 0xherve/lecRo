@@ -433,6 +433,11 @@ export const features = [
     },
     {
       id: '4',
+      title: 'Contact Us',
+      url: 'contact',
+    },
+    {
+      id: '5',
       title: 'FAQs',
       url: 'faq',
     },
