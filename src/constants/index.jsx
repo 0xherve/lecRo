@@ -199,6 +199,11 @@ export const features = [
       name: 'Murengezi Octave',
       role: 'Innovation Expert',
       avatarUrl: '/images/teamMembers/octave.JPG',
+    }, {
+      id: '4',
+      name: 'Ishimwe Pacifique',
+      role: 'Mechanical Systems Engineer',
+      avatarUrl: '/images/teamMembers/pacifique.jpeg',
     },
   ];
   
