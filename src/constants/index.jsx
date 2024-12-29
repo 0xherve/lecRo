@@ -185,13 +185,13 @@ export const features = [
     {
       id: '1',
       name: 'Paula Brooks Aziz',
-      role: 'Early Investor',
+      role: 'Chairperson',
       avatarUrl: '/images/teamMembers/paula.png',
       },
     {
       id: '2',
       name: 'Brandi McLellan Brooks',
-      role: 'Early Investor',
+      role: ' Board Director',
       avatarUrl: '/images/teamMembers/brandi.png',
     },
     {
