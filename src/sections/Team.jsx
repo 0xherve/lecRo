@@ -13,7 +13,7 @@ const Team = () => {
                 setTeamMembers(data || []);
             })
             .catch((error) => {
-                console.error('Error fetching team members:', error);
+                console.error('Error ftching team members:', error);
                 setTeamMembers([]);
             });
     }, []);
