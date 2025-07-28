@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-const TeamItem =  ({ item, containerClassName }) => {
+const TeamItem = ({ member, containerClassName }) => {
     return (
       <div
         className={clsx(
@@ -11,14 +11,14 @@ const TeamItem =  ({ item, containerClassName }) => {
         <div className="flex items-center max-xl:-mr-8">
           <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
             <img
-              src={item.avatarUrl}
-              alt={item.name}
+              src={member.imageUrl}
+              alt={member.fullName}
               className="size-full object-cover rounded-full"
             />
           </div>
           <div>
-            <h4 className="body-2 mb-0.5 text-p1">{item.name}</h4>
-            <p className="small-compact uppercase text-s3">{item.role}</p>
+            <h4 className="body-2 mb-0.5 text-p1">{member.fullName}</h4>
+            <p className="small-compact uppercase text-s3">{member.title}</p>
           </div>
         </div>
       </div>

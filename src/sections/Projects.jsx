@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Element } from "react-scroll";
-import { projects } from '../constants';
+import { getAllHistoryItems } from '../api/get';
 
 import {
     VerticalTimeline,
@@ -9,7 +9,7 @@ import {
 
   import "react-vertical-timeline-component/style.min.css";
 
-  const ProjectCard = ({ experience }) => {
+  const HistoryCard = ({ historyItem }) => {
     return (
       <VerticalTimelineElement
         contentStyle={{
@@ -17,32 +17,26 @@ import {
           color: "#fff",
         }}
         contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-        date={experience.date}
-        iconStyle={{ background: experience.iconBg }}
+        date={historyItem.date}
+        iconStyle={{ background: "#915eff" }}
         icon={
           <div className='flex justify-center items-center w-full h-full'>
-            <img
-              src={experience.icon}
+            <img 
+              src="/images/lecRo.svg" 
+              alt="lecRo Logo" 
               className='w-[60%] h-[60%] object-contain'
             />
           </div>
         }
       >
-        <div className='flex justify-between'>
-          <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-         {experience.done ? (
-          <img
-          src={experience.icon}
-          className='w-[6%] h-[10%] bg-green-300 rounded-full object-contain'
-        />
-         ): ''}
-          
+        <div>
+          <h3 className='text-white text-[24px] font-bold'>{historyItem.title}</h3>
         </div>
   
         <ul className='mt-5 list-disc ml-5 space-y-2'>
-          {experience.points.map((point, index) => (
+          {historyItem.points.map((point, index) => (
             <li
-              key={`experience-point-${index}`}
+              key={`history-point-${index}`}
               className='text-white-100 text-[14px] pl-1 tracking-wider'
             >
               {point}
@@ -54,6 +48,18 @@ import {
   }
 
 const Projects = () => {
+  const [historyItems, setHistoryItems] = useState([]);
+
+  useEffect(() => {
+    getAllHistoryItems()
+        .then((data) => {
+            setHistoryItems(data);
+        })
+        .catch((error) => {
+            console.error('Projects component: Error fetching history items:', error);
+        });
+  }, []);
+
   return (
     <section>
         <Element name="projects" className="relative">
@@ -72,10 +78,10 @@ const Projects = () => {
 
         <div className='mt-20 flex flex-col'>
             <VerticalTimeline>
-            {projects.map((experience, index) => (
-                <ProjectCard
-                key={`experience-${index}`}
-                experience={experience}
+            {historyItems.map((historyItem, index) => (
+                <HistoryCard
+                key={`history-${historyItem._id}`}
+                historyItem={historyItem}
                 />
             ))}
             </VerticalTimeline>

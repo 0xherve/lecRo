@@ -1,10 +1,24 @@
 import { Element} from "react-scroll";
-import { teamMembers } from "../constants/index.jsx";
 import TeamItem from "../components/TeamItem.jsx";
+import { getAllTeamMembers } from "../api/get";
+import { useState, useEffect } from "react";
 
 const Team = () => {
+    const [teamMembers, setTeamMembers] = useState([]);
     const halfLength = Math.floor(teamMembers.length / 2);
-  return (
+
+    useEffect(() => {
+        getAllTeamMembers()
+            .then((data) => {
+                setTeamMembers(data || []);
+            })
+            .catch((error) => {
+                console.error('Error fetching team members:', error);
+                setTeamMembers([]);
+            });
+    }, []);
+
+    return (
     <Element name="team">
         <section className='relative z-2 py-24 md:py-28 lg:py-40'>
         <div className="container block lg:flex">
@@ -16,8 +30,8 @@ const Team = () => {
                 <div className="testimonials_group-after flex-50">
                 {teamMembers.slice(0, halfLength).map((member) => (
                     <TeamItem
-                        key={member.id}
-                        item={member}
+                        key={member._id}
+                        member={member}
                         containerClassName="last:after:hidden last:after:max-md:block"
                     />
                 ))}
@@ -26,12 +40,12 @@ const Team = () => {
                 <div className="flex-50">
                 {teamMembers.slice(halfLength).map((member) => (
                     <TeamItem
-                        key={member.id}
-                        item={member}
+                        key={member._id}
+                        member={member}
                         containerClassName="last:after:hidden after:right-auto after:left-0 after:max-md:-left-4 md:px-12"
                     />
                 ))}
-            </div>
+                </div>
             </div>
         </div>
         </section>
